@@ -59,6 +59,7 @@ class Defluff < Formula
   end
 
   test do
-    assert_match "slop", shell_output("echo 'At the end of the day we should leverage synergy.' | #{bin}/defluff lint", 1)
+    output = shell_output("echo 'At the end of the day we should leverage synergy.' | #{bin}/defluff lint", 1)
+    assert_match "slop", output
   end
 end
