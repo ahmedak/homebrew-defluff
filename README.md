@@ -1,18 +1,27 @@
-# Ahmedak Defluff
+# ahmedak/defluff
 
-## How do I install these formulae?
+Homebrew tap for [defluff](https://github.com/ahmedak/defluff) — the deterministic slop check for AI-generated prose.
 
-`brew install ahmedak/defluff/<formula>`
+## Install
 
-Or `brew tap ahmedak/defluff` and then `brew install <formula>`.
+```bash
+brew install ahmedak/defluff/defluff
+```
+
+Or tap once, then install:
+
+```bash
+brew tap ahmedak/defluff
+brew install defluff
+```
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "ahmedak/defluff"
-brew "<formula>"
+brew "defluff"
 ```
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+See the [defluff README](https://github.com/ahmedak/defluff) for usage, or `brew help`, `man brew`, [Homebrew's documentation](https://docs.brew.sh).
