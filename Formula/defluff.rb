@@ -7,6 +7,14 @@ class Defluff < Formula
   sha256 "50996a6029a1d8101d1d2cb4533e3b2a019199f9f227f654323cc1fa4e8c8a32"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/ahmedak/homebrew-defluff/releases/download/defluff-0.1.1"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "daf414f3eff41d03979b40640074f2d68348a933f708a1a3cd7b6b4f1cc655f9"
+    sha256 cellar: :any_skip_relocation, sequoia:      "d42b8419aa2b22ac91de515006d319e58b76fb60e282adc04e29bfb50cf1e195"
+    sha256 cellar: :any,                 x86_64_linux: "9120ec5ac9954886a338c02dba1a37263befe38d6f7ce636f5fbaf963656a6d8"
+  end
+
   depends_on "python@3.12"
 
   resource "annotated-doc" do
